@@ -275,7 +275,7 @@ a img:hover{
 .svgmob{
     display:none;
 }
-@media only screen and (max-width:800px){
+@media only screen and (max-width:1000px){
     .add li{
         display: none;
     }
@@ -420,6 +420,9 @@ a img:hover{
       align-items: center;
       max-width:100%;
       text-align: center;
+  }
+  .footer a{
+      color: gray;
   }
   .company{
       width: 80%;
