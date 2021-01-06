@@ -276,6 +276,10 @@ a img:hover{
     display:none;
 }
 @media only screen and (max-width:1000px){
+    html,body{
+        max-width: 100%;
+        overflow-x: hidden;
+    }
     .add li{
         display: none;
     }
@@ -292,6 +296,7 @@ a img:hover{
     }
     .jpg1{
         display:inline;
+        max-width: 100%;
        
      
     }
