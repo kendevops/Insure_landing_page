@@ -279,11 +279,12 @@ a img:hover{
 .footer li a{
     color: gray;
 }
-@media only screen and (max-width:468px){
+@media only screen and (max-width:480px){
     body{
         max-width:100%;
          display: block;
-         overflow-x: hidden;
+        padding: 0;
+        margin: 0;
     }
     .add{
         width: 100%;
@@ -347,7 +348,8 @@ a img:hover{
         display: none;
     }
     .left3{
-        display: inline;
+        display:inline;
+        margin-left: -100px;
     }
     .side3{
         display:inline;
@@ -459,7 +461,6 @@ a img:hover{
   padding-top: 40px;
   
         }
-}
 .body a{
 color: white;
 text-decoration: none;
@@ -479,4 +480,8 @@ line-height: 45pt;
 .body a:hover{
   border: 2px solid white;
   padding: 10px 20px 10px 20px;
+}
+#desktop{
+    display: none;
+}
 }
