@@ -282,9 +282,13 @@ a img:hover{
 @media only screen and (max-width:480px){
     body{
         max-width:100%;
-         display: block;
+        overflow-x: hidden;
         padding: 0;
         margin: 0;
+    }
+    .header{
+        padding-top: 10px;
+       
     }
     .add{
         width: 100%;
@@ -301,6 +305,10 @@ a img:hover{
     .add .hamburger:hover{
         border: none;
         padding:0;
+    }
+    .add img{
+        padding-left: 20px;
+        padding-top: 10px;
     }
     .jpg{
         display: none;
@@ -321,12 +329,22 @@ a img:hover{
     }
     #human{
         text-align: center;
-        width:480px;
-        font-size: 3rem;
+        width:400px;
+        font-size: 2.5rem;
         line-height: 42pt;
-       margin-left: -5px;
+       margin-left:20px;
         
         
+    }
+    #get{
+        margin-left:60px;  
+    }
+    .view{
+        margin-left:60px; 
+    }
+    #second{
+        font-size: 2.5rem;
+       
     }
     .intro  #desktop{
         width:2px;
@@ -392,6 +410,7 @@ a img:hover{
     }
     .svg{
         display:none;
+       
     }
     .find{
         max-width:90%;
@@ -412,7 +431,7 @@ a img:hover{
    .svgmob{
        display:inline;
        margin-left:-220px;
-       height:400px;
+       height:300px;
        top:0;
    }  
    .icons{
