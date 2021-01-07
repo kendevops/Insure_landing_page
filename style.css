@@ -329,21 +329,24 @@ a img:hover{
     }
     #human{
         text-align: center;
-        width:400px;
-        font-size: 2.5rem;
-        line-height: 42pt;
-       margin-left:20px;
+        max-width:70%;
+        font-size: 2rem;
+        line-height: 30pt;
+       margin-left:60px;
         
         
     }
     #get{
-        margin-left:60px;  
+        margin-left:20px;  
     }
     .view{
         margin-left:60px; 
     }
     #second{
         font-size: 2.5rem;
+        text-align: center;
+        max-width: 50%;
+       
        
     }
     .intro  #desktop{
@@ -375,8 +378,7 @@ a img:hover{
     .hr2{
         display: inline;
         width:200px;
-        margin-left:30% ;
-        margin-right: 40%;
+       justify-content: center;
         
     }
     .flex{
@@ -415,10 +417,12 @@ a img:hover{
     .find{
         max-width:90%;
         margin-top: 100px;
-        margin-left: -1px;
+        text-align: center;
+        font-size: 2.5rem;
     }
     .howorks{
         margin-left: -98px;
+        text-align: center;
         margin-bottom:100px;
         top:80px;
     }   
@@ -431,7 +435,7 @@ a img:hover{
    .svgmob{
        display:inline;
        margin-left:-220px;
-       height:300px;
+       width:230px;
        top:0;
    }  
    .icons{
