@@ -1,0 +1,79 @@
+:root {
+  --debug: 1px solid red;
+  /* primary colors */
+  --DarkViolet: hsl(256, 26%, 20%);
+  --GrayishBlue: hsl(216, 30%, 68%);
+  /* secondary colors */
+  --Red: hsl(0, 87%, 67%);
+  /* neutral colors */
+  --VeryDarkViolet: hsl(270, 9%, 17%);
+  --DarkGrayishViolet: hsl(273, 4%, 51%);
+  --VeryLightGray: hsl(0, 0%, 98%);
+
+  /* font families  */
+  --globalFont: "Karla", sans-serif;
+  --headerFont: "DM Serif Display", serif;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: var(--globalFont);
+  color: var(--VeryDarkBlue);
+  font-size: 16px;
+}
+
+body,
+* {
+  transition: 0.3s;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--headerFont);
+}
+a {
+  text-decoration: none;
+}
+input {
+  border: none;
+}
+
+button {
+  border-style: none;
+  border: none;
+  cursor: pointer;
+}
+input:focus,
+button:focus {
+  outline: none;
+}
+
+/* Desktop View */
+
+/* .attribution */
+
+.attribution {
+  font-size: 11px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: var(--GrayishViolet);
+  font-weight: 500;
+  padding-top: 30px;
+  background-color: var(--VeryDarkViolet);
+}
+.attribution a {
+  color: var(--GrayishViolet);
+  cursor: pointer;
+}
+.attribution a:hover {
+  color: var(--Cyan);
+}
+
+/* Mobile view */
+@media only screen and (max-width: 750px) {
+}
