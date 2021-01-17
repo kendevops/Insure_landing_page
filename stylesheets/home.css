@@ -54,6 +54,142 @@ button:focus {
 
 /* Desktop View */
 
+/* header */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  position: fixed;
+  background-color: #fff;
+  padding-bottom: 10px;
+  z-index: 1;
+  top: 0;
+  overflow: hidden;
+}
+.logo-container {
+  flex: 1;
+  margin-left: 5%;
+  margin-right: 10%;
+}
+nav {
+  flex: 1;
+  display: flex;
+  margin-left: 10%;
+
+  justify-content: center;
+  align-items: center;
+}
+nav a {
+  color: var(--DarkGrayishViolet);
+  font-weight: 400;
+  display: block;
+}
+nav button {
+  background-color: var(--VeryLightGray);
+  color: var(--DarkViolet);
+  border: 2px solid var(--DarkViolet);
+  padding: 10px 19px 10px 19px;
+  border-radius: 2px;
+  margin-bottom: 0;
+}
+nav button:hover {
+  background-color: var(--DarkViolet);
+  color: var(--VeryLightGray);
+}
+.header-container .toggle-icon {
+  display: none;
+}
+nav a:hover {
+  color: var(--DarkViolet);
+}
+nav .nav-item {
+  margin-right: 20px;
+  text-align: center;
+}
+
+/* main */
+main {
+  margin-top: 50px;
+}
+/* intro-section */
+.welcome {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--DarkViolet);
+  height: 100vh;
+}
+.welcome .left {
+  color: #fff;
+  flex: 1;
+}
+
+.welcome .left .intro-left-dsk {
+  display: block;
+  position: relative;
+  bottom: -20px;
+}
+.welcome .left .intro-left-mobile {
+  display: none;
+}
+.welcome .left .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-left: 70px;
+  margin-top: 25%;
+}
+.welcome .left .content .line {
+  padding: 2px;
+  background-color: var(--VeryLightGray);
+  opacity: 0.4;
+  width: 50%;
+  margin-bottom: 20px;
+}
+.welcome .left .content h1 {
+  font-size: 70px;
+  font-weight: 400;
+  margin-bottom: 5px;
+  line-height: 58px;
+}
+.welcome .left .content .btn-container {
+  margin-right: 10px;
+}
+.welcome .left .content button {
+  background-color: var(--DarkViolet);
+  color: var(--VeryLightGray);
+  border: 2px solid var(--VeryLightGray);
+  padding: 10px 19px 10px 19px;
+  border-radius: 2px;
+}
+.welcome .left .content button:hover {
+  background-color: var(--VeryLightGray);
+  color: var(--VeryDarkViolet);
+}
+.welcome .right {
+  flex: 1;
+  background: url("../images/bg-pattern-intro-right-desktop.svg") no-repeat;
+  background-position: 270px -50px;
+}
+.welcome .right .img-desktop {
+  position: relative;
+  bottom: -150px;
+  margin-right: 50px;
+  scroll-behavior: initial;
+}
+.welcome .right .img-mobile {
+  display: none;
+}
+
+/* Footer */
+footer {
+  background: url("../images/bg-pattern-footer-desktop.svg")
+    var(--VeryLightGray) no-repeat;
+
+  display: flex;
+  flex-direction: column;
+}
 /* .attribution */
 
 .attribution {
@@ -64,10 +200,10 @@ button:focus {
   color: var(--GrayishViolet);
   font-weight: 500;
   padding-top: 30px;
-  background-color: var(--VeryDarkViolet);
+  background-color: var(--VeryLightGray);
 }
 .attribution a {
-  color: var(--GrayishViolet);
+  color: var(--VeryDarkViolet);
   cursor: pointer;
 }
 .attribution a:hover {

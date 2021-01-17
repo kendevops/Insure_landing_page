@@ -12,13 +12,61 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Insure landing page</title>
-  <link rel="stylesheet" href="../stylesheet/home.css">
+  <link rel="stylesheet" href="../stylesheets/home.css">
 
 
 </head>
 <body>
+  <!--Header-->
+
+  <header class="header-container">
+    <div class="logo-container">
+      <img src="../images/logo.svg" alt="logo" class="logo">
+    </div>
+    <nav>
+      <a href="#" class="nav-item">HOW WE WORK</a>
+      <a href="#" class="nav-item">BLOG</a>
+      <a href="#" class="nav-item">ACCOUNT</a>
+      <button>VIEW PLANS</button>
+    </nav>
+
+    <div class="toggle-icon" onclick="toggle()">
+      <i class="fa fa-bars"></i>
+    </div>
+  </header>
   
-  
+  <!-- main -->
+  <main>
+    <section class="welcome">
+      <div class="left">
+        <div class="content">
+        <div class="line"></div>
+        <h1>Humanizing your insurance.</h1>
+        <p>Get your life insurance coverage easier and faster.
+          We blend our expertise and technology to help you find the plan
+          that's right for you. Ensure you and your loved ones are protected.
+        </p>
+        <div class="btn-container">
+          <button>VIEW PLANS</button>
+        </div>
+        </div>
+        <div class="intro-left-dsk">
+          <img src="../images/bg-pattern-intro-left-desktop.svg" alt="" >
+        </div>
+        <div class="intro-left-mobile">
+          <img src="../images/bg-pattern-intro-left-mobile.svg" alt="" >
+        </div>
+      </div>
+      <div class="right">
+        <div class="img-desktop" >
+          <img src="../images/image-intro-desktop.jpg" alt="">
+        </div>
+        <div class="img-mobile">
+          <img src="../images/image-intro-mobile.jpg" alt="">
+        </div>
+      </div>
+    </section>
+  </main>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
@@ -26,5 +74,6 @@
   </div>
 
   <script src="https://kit.fontawesome.com/568c011d87.js" crossorigin="anonymous"></script>
+  <script src="../scripts/index.js"></script>
 </body>
 </html>
