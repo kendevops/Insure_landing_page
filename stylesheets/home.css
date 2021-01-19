@@ -351,6 +351,7 @@ footer .content .features h5 {
 @media only screen and (max-width: 750px) {
   .header-container {
     /* top: 0; */
+    width: 100vw;
   }
 
   header nav {
@@ -360,10 +361,49 @@ footer .content .features h5 {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 5%;
+    padding: 1%;
     border: 1px solid var(--DarkViolet);
   }
   .mobile-nav {
     display: flex;
+    justify-content: center;
+    height: 80vh;
+    background: url("../images/bg-pattern-mobile-nav.svg") var(--VeryDarkViolet)
+      no-repeat;
+    color: #fff;
+    margin-top: 15%;
+    padding-top: 10%;
+    background-position: bottom;
+  }
+  .mobile-nav nav {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+  }
+  .mobile-nav nav .nav-item {
+    margin-bottom: 10%;
+  }
+  .mobile-nav button {
+    background-color: var(--VeryDarkViolet);
+    color: var(--VeryLightGray);
+    border: 2px solid var(--VeryLightGray);
+    padding: 10px 19px 10px 19px;
+    border-radius: 2px;
+    width: 100%;
+    font-size: 20px;
+  }
+  .mobile-nav button:hover {
+    background-color: var(--VeryLightGray);
+    color: var(--VeryDarkViolet);
+  }
+  .mobile-nav nav a {
+    display: block;
+    color: #fff;
+    font-size: 25px;
+    margin-bottom: 9%;
+    font-weight: 400;
   }
   .welcome {
     flex-direction: column-reverse;
@@ -376,7 +416,7 @@ footer .content .features h5 {
   }
   .welcome .left {
     padding: 5%;
-    overflow: visible;
+    overflow: hidden;
     /* height: 70vh; */
     background-color: var(--DarkViolet);
   }
@@ -387,7 +427,7 @@ footer .content .features h5 {
     display: none;
     position: relative;
     float: right;
-    overflow: visible;
+    overflow: hidden;
     top: -100px;
     z-index: 1;
     outline: var(--debug);
@@ -407,15 +447,17 @@ footer .content .features h5 {
       var(--DarkViolet);
     background-position: left;
     flex: 1;
+    width: 100vw;
   }
   .welcome .right .img-desktop {
     display: none;
   }
   .welcome .right .img-mobile {
-    display: flex;
+    display: block;
   }
   .welcome .right .img-mobile img {
-    object-fit: cover;
+    object-fit: contain;
+    width: 100%;
   }
   .about,
   .about .content .card,
@@ -427,6 +469,10 @@ footer .content .features h5 {
   .about .content {
     flex-direction: column;
   }
+  .about .header {
+    font-size: 25px;
+    line-height: 40px;
+  }
   .work {
     padding: 3%;
     flex-direction: column;
@@ -435,11 +481,14 @@ footer .content .features h5 {
     background-position: right;
   }
   .work .title {
-    font-size: 30px;
+    font-size: 20px;
     line-height: auto;
   }
   .work .btn {
     margin-bottom: 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .work .btn button {
     width: 100%;
