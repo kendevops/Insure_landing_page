@@ -73,7 +73,7 @@ button:focus {
   margin-left: 5%;
   margin-right: 10%;
 }
-nav {
+header nav {
   flex: 1;
   display: flex;
   margin-left: 10%;
@@ -81,12 +81,12 @@ nav {
   justify-content: center;
   align-items: center;
 }
-nav a {
+header nav a {
   color: var(--DarkGrayishViolet);
   font-weight: 400;
   display: block;
 }
-nav button {
+header nav button {
   background-color: var(--VeryLightGray);
   color: var(--DarkViolet);
   border: 2px solid var(--DarkViolet);
@@ -94,7 +94,7 @@ nav button {
   border-radius: 2px;
   margin-bottom: 0;
 }
-nav button:hover {
+header nav button:hover {
   background-color: var(--DarkViolet);
   color: var(--VeryLightGray);
 }
@@ -107,6 +107,9 @@ nav a:hover {
 nav .nav-item {
   margin-right: 20px;
   text-align: center;
+}
+.mobile-nav {
+  display: none;
 }
 
 /* main */
@@ -129,7 +132,7 @@ main {
   display: block;
   position: relative;
 }
-.welcome .left .intro-left-mobile {
+.intro-left-mobile {
   display: none;
 }
 .welcome .left .content {
@@ -219,13 +222,110 @@ main {
   color: var(--DarkGrayishViolet);
   font-weight: 400;
 }
+/* work section */
+.work {
+  width: 85vw;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  margin-top: 10%;
+  background: url("../images/bg-pattern-how-we-work-desktop.svg")
+    var(--DarkViolet) no-repeat;
+  background-position: right;
+  padding: 30px 0 30px 50px;
+}
+.work .title {
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 400;
+  color: var(--VeryLightGray);
+  flex: 1;
+}
+.work .btn {
+  flex: 1;
+}
+.work .btn button {
+  background-color: var(--DarkViolet);
+  color: var(--VeryLightGray);
+  border: 2px solid var(--VeryLightGray);
+  padding: 10px 19px 10px 19px;
+  border-radius: 2px;
+  float: right;
+  margin-top: 15%;
+  margin-right: 11%;
+}
+.work .btn button:hover {
+  background-color: var(--VeryLightGray);
+  color: var(--DarkViolet);
+}
 /* Footer */
 footer {
   background: url("../images/bg-pattern-footer-desktop.svg")
     var(--VeryLightGray) no-repeat;
 
+  margin-top: 10%;
+  padding: 5% 12%;
+}
+footer .header {
+  display: flex;
+  justify-content: space-between;
+  height: 10vh;
+  overflow: hidden;
+}
+footer .header .logo {
+  margin-top: 2%;
+}
+footer .header .logo img {
+  display: block;
+}
+footer .header .social-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 2%;
+  /* margin-bottom: 3%; */
+}
+footer .header .social-media a {
+  display: block;
+}
+footer .header .social-media .item {
+  margin-right: 15px;
+}
+footer .line {
+  padding: 0.5px 0 0 0;
+  background-color: var(--DarkGrayishViolet);
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+footer .content {
+  display: flex;
+  flex-direction: row;
+}
+footer .content .features {
+  flex: 1;
   display: flex;
   flex-direction: column;
+
+  padding: 0;
+}
+footer .content .features nav {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+footer .content .features nav a {
+  display: block;
+  color: var(--DarkViolet);
+  font-size: 15px;
+  font-weight: 400;
+}
+footer .content .features nav a:hover,
+footer .social-media a:hover {
+  color: var(--VeryDarkViolet);
+}
+footer .content .features h5 {
+  font-size: 13px;
+  color: var(--DarkGrayishViolet);
 }
 /* .attribution */
 
@@ -249,4 +349,138 @@ footer {
 
 /* Mobile view */
 @media only screen and (max-width: 750px) {
+  .header-container {
+    /* top: 0; */
+  }
+
+  header nav {
+    display: none;
+  }
+  .header-container .toggle-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--DarkViolet);
+  }
+  .mobile-nav {
+    display: flex;
+  }
+  .welcome {
+    flex-direction: column-reverse;
+    height: auto;
+    background-color: #fff;
+  }
+  .welcome .left .content h1 {
+    font-size: 40px;
+    line-height: 30px;
+  }
+  .welcome .left {
+    padding: 5%;
+    overflow: visible;
+    /* height: 70vh; */
+    background-color: var(--DarkViolet);
+  }
+  .welcome .left .intro-left-dsk {
+    display: none;
+  }
+  .intro-left-mobile {
+    display: none;
+    position: relative;
+    float: right;
+    overflow: visible;
+    top: -100px;
+    z-index: 1;
+    outline: var(--debug);
+  }
+  .welcome .left .content {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+  }
+  .welcome .left .content .btn-container {
+    margin: auto;
+    padding-bottom: 5%;
+  }
+  .welcome .right {
+    background: url("../images/bg-pattern-intro-left-mobile.svg") no-repeat
+      var(--DarkViolet);
+    background-position: left;
+    flex: 1;
+  }
+  .welcome .right .img-desktop {
+    display: none;
+  }
+  .welcome .right .img-mobile {
+    display: flex;
+  }
+  .welcome .right .img-mobile img {
+    object-fit: cover;
+  }
+  .about,
+  .about .content .card,
+  .work {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .about .content {
+    flex-direction: column;
+  }
+  .work {
+    padding: 3%;
+    flex-direction: column;
+    background: url("../images/bg-pattern-how-we-work-mobile.svg")
+      var(--DarkViolet) no-repeat;
+    background-position: right;
+  }
+  .work .title {
+    font-size: 30px;
+    line-height: auto;
+  }
+  .work .btn {
+    margin-bottom: 7%;
+  }
+  .work .btn button {
+    width: 100%;
+    align-self: center;
+  }
+  footer {
+    background: url("../images/bg-pattern-footer-mobile.svg")
+      var(--VeryLightGray) no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .header {
+    flex-direction: column;
+  }
+  footer .header .logo {
+    margin-bottom: 2%;
+  }
+  footer .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    /* margin-bottom: 3%; */
+  }
+  footer .header .social-media .item {
+    margin: auto;
+  }
+  footer .content .features {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  footer .content .features nav {
+    text-align: center;
+  }
+  footer .line {
+    width: 80%;
+    margin-top: 5%;
+    margin-bottom: 2%;
+  }
 }
