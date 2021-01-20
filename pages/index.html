@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Insure landing page</title>
+  <link rel="stylesheet" href="../stylesheets/home.css">
+
+
+</head>
+<body>
+  <!--Header-->
+
+  <header class="header-container">
+    <div class="logo-container">
+      <img src="../images/logo.svg" alt="logo" class="logo">
+    </div>
+    <nav>
+      <a href="#" class="nav-item">HOW WE WORK</a>
+      <a href="#" class="nav-item">BLOG</a>
+      <a href="#" class="nav-item">ACCOUNT</a>
+      <button>VIEW PLANS</button>
+    </nav>
+
+    <div class="toggle-icon" onclick="toggle()">
+      <i class="fa fa-bars"></i>
+    </div>
+  </header>
+  <div class="mobile-nav"id='navMobile'>
+    <nav>
+      <a href="#" class="nav-item">HOW WE WORK</a>
+      <a href="#" class="nav-item">BLOG</a>
+      <a href="#" class="nav-item">ACCOUNT</a>
+      <button>VIEW PLANS</button>
+    </nav>
+  </div>
+  
+  <!-- main -->
+  <main>
+    <section class="welcome">
+      <div class="left">
+        <div class="content">
+        <div class="line"></div>
+        <h1>Humanizing your insurance.</h1>
+        <p>Get your life insurance coverage easier and faster.
+          We blend our expertise and technology to help you find the plan
+          that's right for you. Ensure you and your loved ones are protected.
+        </p>
+        <div class="btn-container">
+          <button>VIEW PLANS</button>
+        </div>
+        </div>
+        <div class="intro-left-dsk">
+          <img src="../images/bg-pattern-intro-left-desktop.svg" alt="" >
+        </div>
+        <div class="intro-left-mobile">
+          <img src="../images/bg-pattern-intro-right-mobile.svg" alt="" >
+        </div>
+      </div>
+      <div class="right">
+        <div class="img-desktop" >
+          <img src="../images/image-intro-desktop.jpg" alt="">
+        </div>
+        <div class="img-mobile">
+          <img src="../images/image-intro-mobile.jpg" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="line"></div>
+      <div class="header">
+        <h2>We're different</h2>
+      </div>
+      <div class="content">
+
+        <div class="card">
+          <div class="icon">
+            <img src="../images/icon-snappy-process.svg" alt="">
+          </div>
+          <div class="title">
+            <h2>Snappy Process</h2>
+          </div>
+          <div class="text">
+            <p>
+              Our application process can be completed in minutes  not hours.
+              Don't get stuck filling in tedious forms.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="icon">
+            <img src="../images/icon-affordable-prices.svg" alt="">
+          </div>
+          <div class="title">
+            <h2>Affordable Prices</h2>
+          </div>
+          <div class="text">
+            <p>
+              We don't you worrying about high monthly costs. Our prices may be low,
+              but we still offer the best coverage possible.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="icon">
+            <img src="../images/icon-people-first.svg" alt="">
+          </div>
+          <div class="title">
+            <h2>People First</h2>
+          </div>
+          <div class="text">
+            <p>
+              Our plans aren't full of conditions and clauses to prevent payouts.
+              We make sure you're covered when you need it. 
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="work">
+      <div class="title">
+        <h2>Find out more about how we work</h2>
+      </div>
+      <div class="btn">
+        <button>HOW WE WORK</button>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="header">
+      <div class="logo">
+        <img src="../images//logo.svg" alt="logo">
+      </div>
+      <div class="social-media">
+        <div class="fb item"><a href="#"><img src="../images/icon-facebook.svg" alt="facebook-icon"></a></div>
+        <div class="twitter item"><a href="#"><img src="../images/icon-twitter.svg" alt=""></a></div>
+        <div class="pinterest item"><a href="#"><img src="../images/icon-pinterest.svg" alt=""></a></div>
+        <div class="instagram item"><a href="#"><img src="../images/icon-instagram.svg" alt=""></a></div>
+      </div>
+    </div>
+    <div class="line"></div>
+    <div class="content">
+      <div class="features">
+        
+        <nav>
+          <h5>OUR COMPANY</h5>
+          <a href="#" class="footer-link">HOW WE WORK</a>
+          <a href="#" class="footer-link">WHY INSURE?</a>
+          <a href="#" class="footer-link">VIEW PLANS</a>
+          <a href="#" class="footer-link">REVIEWS</a>
+        </nav>
+      </div>
+      <div class="features">
+        <nav>
+          <h5>HELP ME</h5>
+          <a href="#" class="footer-link">FAQ</a>
+          <a href="#" class="footer-link">TERMS OF USE</a>
+          <a href="#" class="footer-link">PRIVACY POLICY</a>
+          <a href="#" class="footer-link">COOKIES</a>
+        </nav>
+      </div>
+      <div class="features">
+        <nav>
+          <h5>CONTACT</h5>
+          <a href="#" class="footer-link">SALES</a>
+          <a href="#" class="footer-link">SUPPORT</a>
+          <a href="#" class="footer-link">LIVE CHAT</a>
+        </nav>
+      </div>
+      <div class="features">
+        <nav>
+          <h5>OTHERS</h5>
+          <a href="#" class="footer-link">CAREERS</a>
+          <a href="#" class="footer-link">PRESS</a>
+          <a href="#" class="footer-link">LICENCES</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+
+  <script src="https://kit.fontawesome.com/568c011d87.js" crossorigin="anonymous"></script>
+  <script src="../scripts/index.js"></script>
+</body>
+</html>
