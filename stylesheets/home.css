@@ -366,7 +366,7 @@ footer .content .features h5 {
     border: 1px solid var(--DarkViolet);
   }
   .mobile-nav {
-    display: flex;
+    display: none;
     justify-content: center;
     height: 80vh;
     background: url("../images/bg-pattern-mobile-nav.svg") var(--VeryDarkViolet)
