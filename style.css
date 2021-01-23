@@ -1,0 +1,363 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	padding: 0px;
+	margin: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.mob{
+	display: flex;
+	padding: 20px 5%;
+	align-items: center;
+	background-color: #fff;
+	justify-content: space-between
+}
+/*
+
+*/
+#menuBtn:hover{
+	cursor: pointer;
+}
+
+.navbar{
+		display: none;
+		list-style-type: none;
+		padding: 120px 20px;
+		background-color: #333;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 63px;
+}
+
+nav ul li{
+		padding: 0px;
+		display: block;
+		margin: 50px 0px;
+		text-align: center;
+	}
+
+.sign{
+	border: 2px solid #fff;
+	padding: 10px;
+}
+.sign:hover{
+	background-color: #ccc;
+}
+/*
+.navigation{
+		display: none;
+		padding: 40px 20px;
+		border-radius: 20px;
+		background-color: #333;
+		position: absolute;
+		width: 80%;
+		margin-top: 40px;
+	}
+*/
+
+/*
+nav ul li{
+	padding: 0px 20px;
+	display: inline-block;
+}
+*/
+
+nav a:link{
+	color: #fff;
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: 600;
+}
+nav a:visited{
+	color: #fff;
+}
+nav a:hover{
+	color: #545873;
+}
+nav a:active{
+	color: #ccc;
+}
+.introT{
+	text-align: center;
+	width: 100%;
+	padding: 100px 40px;
+}
+.introT h1{
+	font-size: 50px;
+	margin: 0px;
+}
+p{
+	font-size: 18px;
+	margin-bottom: 40px
+}
+.intro img{
+	width: 100%;
+}
+.introText{
+	width: 100%;
+	background-image: url(images/bg-pattern-intro-left-mobile.svg), url(images/bg-pattern-intro-right-mobile.svg);
+	background-repeat: no-repeat, no-repeat;
+	background-position-y: top, 300px;
+	background-position-x: left, right;
+	background-color: #2c2640;
+	background-size: 240px, 180px;
+	color: #fff;
+}
+
+
+.view{
+	color: #fff;
+	text-decoration: none;
+	padding: 15px 25px;
+	border: 2px solid #fff;
+	font-weight: 600;
+}
+.view:hover{
+	background-color: #fff;
+	color: #2c2640;
+	border: 2px solid #2c2640;
+}
+
+.different{
+	text-align: center;
+	padding: 100px 0px;
+}
+.diffInfo{
+	padding: 10px 30px;
+}
+.diffInfo div{
+	margin-top: 0px;
+	padding: 10px
+}
+.diffInfo div h4{
+	font-size: 25px;
+	color: #333;
+}
+.diffInfo div p{
+	color: #333;
+}
+.different h2{
+	font-size: 50px;
+	color: #333;
+}
+.findMore{
+	background-color: #2c2640;
+	text-align: center;
+	padding: 50px 20px;
+	color: #fff;
+	margin: 0px 20px;
+	background-image: url(images/bg-pattern-how-we-work-mobile.svg);
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size: contain;
+}
+
+.findMore h1{
+	font-size: 50px;
+}
+
+footer{
+	background-color: #fff;
+	color: #2c2640;
+	padding: 40px 0px;
+	text-align: center;
+	background-image: url(images/bg-pattern-footer-mobile.svg);
+	background-repeat: no-repeat;
+	background-position-y: -120px;
+	background-position-x: center;
+	background-size: 600px;
+	margin-top: 150px
+}
+
+footer .f-foot{
+	display: block;
+	
+}
+footer .f-foot div{
+	margin-bottom: 30px
+}
+footer .s-foot div{
+	display: block;
+	padding: 0px 10px
+}
+footer ul{
+	list-style-type: none;
+	padding: 0px;
+}
+footer ul li{
+	margin-bottom: 10px;
+}
+
+footer .f-social img{
+	height: 25px
+}
+footer h5{
+	font-size: 16px;
+	color: gray;
+}
+footer a img{
+	margin-right: 10px;
+	height: 20px;
+}
+
+footer a:link{
+	color: #2c2640;
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: 600
+}
+footer a:visited{
+	color: #2c2640;
+}
+footer a:hover{
+	color: #ccc;
+}
+footer a:active{
+	color: #2c2640;
+}
+
+.intro{
+	background-color: #2c2640;
+}
+
+.attribution{
+	text-align: center;
+}
+.attribution a:link{
+	color: #2c2640;
+	text-decoration: none;
+	font-weight: 600;
+}
+.attribution a:visited{
+	color: #2c2640;
+}
+.attribution a:hover{
+	color: #ccc;
+}
+@media only screen and (min-width: 768px) {
+	#menuBtn{
+		display: none;
+		padding: 0px;
+		margin: 0px;
+		border: 0px;
+	}
+	.mob{
+	display: block;
+	padding: 0px 0px;
+}
+	
+	.sign{
+	border: 2px solid #2c2640;
+	padding: 10px 25px;
+}
+	.sign:hover{
+	background-color: #ccc;
+	color: #fff;
+}
+	nav{
+	display: flex;
+	padding: 0px 5%;
+	align-items: center;
+	background-color: #fff;
+	justify-content: space-between;
+	position: relative;
+	}
+	nav a:link{
+	color: #2c2640;
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: 600;
+}
+nav a:visited{
+	color: #2c2640;
+}
+nav a:hover{
+	color: #545873;
+}
+nav a:active{
+	color: #2c2640;
+}
+	nav ul li{
+		
+		display: inline-block;
+		margin: 0px 10px;
+		text-align: center;
+	}
+	.introT{
+	text-align: left;
+	width: 60%;
+	padding: 130px 20px;
+}
+.intro img{
+	width: 28%;
+	position: absolute;
+	bottom: -1%;
+	z-index: 2;
+	right: 5%;
+}
+.introText{
+	position: relative;
+	padding-left: 5%;
+	background-image: url(images/bg-pattern-intro-right-desktop.svg), url(images/bg-pattern-intro-left-desktop.svg);
+	background-repeat: no-repeat, no-repeat;
+	background-position-y: top, 300px;
+	background-position-x: right, left;
+	background-color: #2c2640;
+	background-size: 270px, 180px;
+	color: #fff;
+}
+	
+	.different{
+		text-align: left;
+		padding: 250px 5% 120px;
+}
+.diffInfo{
+	display: flex;
+	justify-content: space-around;
+}
+.findMore{
+	display: flex;
+	justify-content: space-between;
+	background-color: #2c2640;
+	text-align: left;
+	align-items: center;
+	padding: 0px 10%;
+	color: #fff;
+	margin: 0px 20px;
+	background-image: url(images/bg-pattern-how-we-work-desktop.svg);
+}
+	
+.navbar{
+		display: block;
+		list-style-type: none;
+		padding: 0px 0px;
+		background-color: #fff;
+		position: static;
+	width: auto;
+}
+	
+footer{
+	text-align: left;
+	background-image: url(images/bg-pattern-footer-desktop.svg);
+	background-repeat: no-repeat;
+	background-position-y: -100px;
+	background-position-x: left;
+	background-size: 600px;
+	padding: 40px 5%
+}
+footer .f-foot{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+footer .s-foot{
+	display: flex;
+	text-align: start;
+}
+	footer .s-foot > div{
+		width: 25%;
+	}
+}
+
