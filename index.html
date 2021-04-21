@@ -4,82 +4,284 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
+
+
+<!-- BOOTSTRAP CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<!-- FONT AWESOME -->
+ <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+
+<!--  GOOGLE FONTS  -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+<!-- 
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&display=swap" rel="stylesheet"> -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+<!-- ------------- -->
+  
+
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+
+<!-- EXTERNAL STYLESHEET -->
+  <link rel="stylesheet" type="text/css" href="style.css">
   
   <title>Frontend Mentor | Insure landing page</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  How we work
-  Blog
-  Account
-  View plans
-
-  Humanizing your insurance.
-
-  Get your life insurance coverage easier and faster. We blend our expertise 
-  and technology to help you find the plan that’s right for you. Ensure you 
-  and your loved ones are protected.
-
-  View plans
-
-  We’re different
-
-  Snappy Process
-
-  Our application process can be completed in minutes, not hours. Don’t get 
-  stuck filling in tedious forms.
-
-  Affordable Prices
-
-  We don’t want you worrying about high monthly costs. Our prices may be low, 
-  but we still offer the best coverage possible.
-
-  People First
-
-  Our plans aren’t full of conditions and clauses to prevent payouts. We make 
-  sure you’re covered when you need it.
-
-  Find out more about how we work
-
-  How we work
-
-  Our company
-
-  How we work
-  Why Insure?
-  View plans
-  Reviews
-
-  Help me
-
-  FAQ
-  Terms of use
-  Privacy policy
-  Cookies
-
-  Contact
-
-  Sales
-  Support
-  Live chat
-
-  Others
-
-  Careers
-  Press
-  Licenses
-
   
+ 
+</head>
+
+
+
+<body>
+<!-- NAVBAR STARTS -->
+<header class="header-container">
+   <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+
+
+    <div class="container-fluid">
+
+
+  <!-- Brand -->
+  <a class="navbar-brand" href="#" style="padding-left: 1.5em;"><img src="images/logo.svg"></a>
+
+  <!-- Toggler/collapsibe Button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" style="margin-right: 1.5em;">
+    <span class="navbar-toggler-icon" ></span>
+  </button>
+
+  <!-- Navbar links -->
+  <div class="collapse navbar-collapse" id="collapsibleNavbar" id="back">
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ml-auto">
+
+        
+      <li class="nav-item">
+        <a class="nav-link" href="#">HOW WE WORK</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">BLOG</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">ACCOUNT</a>
+      </li>
+      <button>VIEW PLANS </button>
+
+    </ul>
+
+  </div>
+</nav> </header>
+<!-- NAVBAR ENDS -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- MAIN SECTION -->
+<main>
+<div class="welcome">
+  <div class="left">
+   <div id="line"></div> 
+  
+ <div id="content">
+  
+
+ <div> <img src="images/image-intro-desktop.jpg" id="man"> </div>
+<div class="content">
+  <h1>Humanizing your insurance.</h1>
+
+<p>Get your life insurance coverage easier and faster. We blend our expertise 
+  and technology to help you find the plan that’s right for you. Ensure you 
+  and your loved ones are protected.</p>
+
+<button class="plans">VIEW PLANS </button>  
+
+ </div> 
+ 
+ </div> 
+</div>
+</div>
+</main> 
+<!-- MAIN SECTION ENDS-->
+
+
+
+
+
+
+
+
+<!-- SECOND SECTION -->
+<section >
+   <div id="line"></div> 
+
+   <div class="different">
+
+  <h1> We're different</h1>
+
+
+<div id="different">
+  <div id="items">
+  <img src="images/icon-snappy-process.svg">
+  <h2><b>Snappy Process</b></h2>
+  <p>Our application process can be completed in minutes, not hours. Don’t get 
+  stuck filling in tedious forms.</p>
+</div>
+
+
+ <div id="items">
+  <img src="images/icon-affordable-prices.svg">
+  <h2> <b> Affordable Prices</b></h2>
+  <p>We don’t want you worrying about high monthly costs. Our prices may be low, 
+  but we still offer the best coverage possible.</p>
+</div>
+
+
+<div id="items">
+  <img src="images/icon-people-first.svg">
+  <h2> <b> People First </b> </h2>
+  <p>Our plans aren’t full of conditions and clauses to prevent payouts. We make 
+  sure you’re covered when you need it..</p>
+</div> 
+
+</div>
+</section>
+<!-- SECOND SECTION ENDS -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- THIRD SECTION -->
+<section>
+  
+  <div id="find">
+    
+<h3>Find out more about how we work</h3>
+
+<div><button class="plans">HOW WE WORK</button></div>
+</div>
+
+
+
+
+</section>
+<!-- THIRD SECTION ENDS -->
+
+
+
+
+
+
+
+
+
+<!-- FOOTER STARTS -->
+ 
+<footer>
+
+<div id="all">
+  <div class="icons">
+
+    <div><img src="images/logo.svg" class="logo"> </div>
+
+ <div class="social"> 
+  <img src="images/icon-twitter.svg">
+  <img src="images/icon-pinterest.svg">
+  <img src="images/icon-instagram.svg"> 
+  <img src="images/icon-facebook.svg">
+</div>
+ </div> 
+<div id="line" ></div> 
+
+
+
+<div id="faq">
+<div>
+  <ul>
+  <li> <a href="#" style="color: hsl(273, 4%, 51%);">Our company</a></li>
+ <li> <a href="#" >How we work</a></li>
+  <li> <a href="#" >Why Insure?</a></li>
+  <li> <a href="#" >View plans</a></li>
+  <li> <a href="#" >Reviews</a></li>
+</ul>
+</div>
+
+<div>
+   <ul>
+  <li> <a href="#" style="color: hsl(273, 4%, 51%);">Help me</a></li>
+  <li> <a href="#" >FAQ</a></li>
+  <li> <a href="#" >Terms of use</a></li>
+  <li> <a href="#" >Privacy policy</a></li>
+  <li> <a href="#" >Cookies</a></li>
+  </ul>
+</div>
+
+<div>
+   <ul>
+ <li> <a href="#" style="color: hsl(273, 4%, 51%);" > Contact</a></li>
+ <li> <a href="#" > Sales</a></li>
+  <li> <a href="#" >Support</a></li>
+  <li> <a href="#" >Live chat</a></li>
+  </ul>
+</div>
+
+
+<div>
+   <ul>
+ <li> <a href="#" style="color: hsl(273, 4%, 51%);" > Others</a></li>
+  <li> <a href="#" >Careers</a></li>
+  <li> <a href="#" >Press</a></li>
+  <li> <a href="#" >Licenses</a></li>
+
+</ul>
+</div>
+
+</div>
+
+ </div>
+<!-- FOOTER ENDS -->
+  </footer>
+
+
+
+
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Maggy</a>.
   </div>
+ 
+
+
+
+
+<!-- BOOTSTRAP CDN -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
 </body>
 </html>
